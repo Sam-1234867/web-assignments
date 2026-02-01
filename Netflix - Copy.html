@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+
+ <style>
+        body{ 
+            width: 100%;
+            height: 120vh;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),  
+             url(hhhhhhhhhh.png);                              
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 0px;
+           
+           }
+            .nav{
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+         .logo{
+            width: 160px;
+            margin-left: 60px;
+        }
+         .sign{
+           margin-right: 80px;
+           justify-content: space-around;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #E50914; 
+            color: white;
+            border-radius: 5px;
+            padding: 10px 18px;
+            border: none;
+            cursor: pointer;
+        }
+        .sign:hover{
+            background-color: rgb(194, 28, 28);
+        }
+        .para{
+            width: 100%;
+            text-align: center;
+            margin-top: 130px;
+        }
+          .para h1{
+            font-size: 50px;
+            font-weight: 800;
+        }
+
+        .para h6{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .para p{
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        form{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        input{
+            width: 350px;
+            height: 27px;
+            background-color: #1b1a1a;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid white;
+            padding: 10px;
+            font-size: 16px;
+        } .start{
+            width: 180px;
+            height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #E50914; 
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .start:hover{
+            background-color: rgb(194, 28, 28);
+        }
+   footer {
+    width: 1290px;
+    height: 350px;
+    background-color: #1b1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid;
+    border-image: linear-gradient(
+        to right,
+        red, orange, yellow, green, blue, indigo, violet
+    ) 1;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left:-50px;
+}
+  
+      /* Container for movie images */
+  .movie {
+    display: flex;
+    gap: 20px;
+}
+
+/* Each image box */
+.mov-one {
+    display: flex;
+    align-items: center;
+}
+
+.mov-one img {
+    width: 150px;
+    height: 230px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Hover effect for images */
+.mov-one img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.left-btn{
+    background-color: #1b1a1a;
+    color: white;
+}
+.right-btn{
+    background-color: #1b1a1a;
+    color: white;
+}
+.number{
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #575353;
+    
+}
+h3{
+    position: absolute;
+    padding: 30px;
+    margin-top: -80px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.reason{
+    width: 1270px;
+    height: 400px;
+    background-color: #1b1a1a;
+    display: flex;
+    padding: 10px;
+    margin-left: -10px;
+ 
+
+}
+
+.one{
+    width: 250px;
+    height: 300px;
+    display: inline;
+    background-image: linear-gradient( 165deg,#0e1734, rgb(32, 3, 14));
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+   }
+.two{
+    width: 250px;
+    height: 300px;
+    display: inline;
+     background-image: linear-gradient( 165deg,#0e1734, rgb(32, 3, 14));
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 80px;
+}
+.three{
+    width: 250px;
+    height: 300px;
+    display: inline;
+   background-image: linear-gradient( 165deg,#0e1734, rgb(32, 3, 14));
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 80px;
+}
+.four{
+    width: 250px;
+    height: 300px;
+    display: inline;
+    background-image: linear-gradient( 165deg,#0e1734, rgb(32, 3, 14));   
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 80px;
+}
+.h2{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.p{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(181, 176, 176);
+}
+.laptop{
+    margin-left:150px ;
+    margin-top: 65px;
+     border-radius: 15px;
+}
+.arrow{
+    margin-left:150px ;
+    margin-top: 23px;
+     border-radius: 15px;
+}
+.tourch{
+    margin-left:150px ;
+    margin-top: 80px;
+     border-radius: 15px;
+}
+.sq{
+    margin-left:150px ;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.form {
+
+    
+    background-color: #1b1a1a;
+    
+}
+      
+ </style>
+   
+</head>
+<body>
+        <nav class="nav">
+            <img class= "logo" src="downloa3.png" >
+            <button class="sign">Sign in</button>
+        </nav> 
+
+        <div class="para">
+
+        <h1>Unlimited movies, TV <br>
+            shows, and more</h1>
+        <h6>Starts at Rs 250, Cancel anytime.</h6>
+        <p style="font-size: 18px;">Ready to watch? Enter your email to reate or restart your membership.</p>
+        
+        <form action="">
+        <input type="Email " placeholder="Email Address" >
+        <button class="start">Get Started </button>
+        </form>
+
+        </div>
+
+         <footer>
+                 <div class="movie">
+
+        <h3>Trending Now</h3>
+        <button class="left-btn">&#8249;</button>
+        
+        <div class="mov-one">
+            <img src="images m 1.png">
+            <div class="number">1</div>
+        </div>
+
+        <div class="mov-one">
+            <img src="images m 2.png">
+            <div class="number">2</div>
+        </div>
+
+        <div class="mov-one">
+            <img src="images m 3.png">
+            <div class="number">2</div>
+        </div>
+
+          <div class="mov-one">
+            <img src="images m 2.png">
+            <div class="number">2</div>
+        </div>
+
+        <div class="mov-one">
+            <img src="images m 3.png">
+            <div class="number">2</div>
+        </div>
+
+        <button class="right-btn">&#8250;</button>
+    </div>
+</footer>
+
+
+<div class="reason">
+    <h3>More Reasons to Join</h3>
+
+           <div class="one">
+            <h2 class="h2">Enjoy on your TV</h2>
+            <p class="p">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, 
+               Blu-ray players, and more.</p>
+               <img class="laptop" src="lap top 2.png" width="80px" height="80px">
+            </div>
+          
+
+            <div class="two">
+                <h2 class="h2">Download your shows to watch offline</h2>
+            <p  class="p">Save your favorites easily and always have something to watch.</p>
+             <img class="arrow" src="arrow img.png" width="80px" height="80px">
+            </div>
+
+            <div class="three">
+                <h2 class="h2">Watch everywhere</h2>
+            <p  class="p">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+             <img class="tourch" src="tourch 4.png" width="80px" height="80px">
+            </div>
+
+            <div class="four">
+                  <h2 class="h2">Create profiles for kids</h2>
+            <p  class="p">Send kids on adventures <br>
+            with their favorite characters in a space made just for them — free <br>
+            with your membership.
+         <img class="sq" src="rose img - Edited.png" width="80px" height="80px"></p>
+         
+         </div>
+</body>
+</html>
